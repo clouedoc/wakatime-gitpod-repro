@@ -1,0 +1,5 @@
+# Set the WAKATIME_API_KEY in your Gitpod settings
+
+vscode:
+  extensions:
+    - WakaTime.vscode-wakatime
