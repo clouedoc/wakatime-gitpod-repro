@@ -17,6 +17,12 @@ Extension version: `v18.1.5`
 6. Execute `> WakaTime: Api Key` and set your API key manually
 7. Edit a file. Everything will work.
 
+## Versions
+
+v18.1.5: reproduces
+v17.1.0: reproduces
+
+
 ## Debugging information
 
 ### `.wakatime.log`
