@@ -20,8 +20,10 @@ Extension version: `v18.1.5`
 ## Versions
 
 v18.1.5: reproduces
-v17.1.0: reproduces
+v18.1.0: OK <-- I'll stay with this version until the bug is resolved
+v17.1.0: OK
 
+To test another version, edit `.gitpod.yml`
 
 ## Debugging information
 
