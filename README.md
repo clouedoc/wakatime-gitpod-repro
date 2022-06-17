@@ -4,6 +4,18 @@
 
 ![Capture d’écran 2022-06-17 à 21 52 46](https://user-images.githubusercontent.com/13921610/174392732-8a8ae223-0a9e-44b7-98a5-0ae957cb91ed.png)
 
+## Reproduction
+
+CLI version: `v1.49.0`
+Extension version: `v18.1.5`
+
+1. Create a gitpod.io account
+2. Add the WAKATIME_API_KEY variable here: https://gitpod.io/variables (with value from https://wakatime.com/api-key)
+3. Open this repository using GitPod
+4. Edit a file to trigger WakaTime reporting
+5. You will see the error message
+6. Execute `> WakaTime: Api Key` and set your API key manually
+7. Edit a file. Everything will work.
 
 ## Debugging information
 
@@ -48,6 +60,20 @@ $ process.env.WAKATIME_API_KEY
 
 The following error lines were present:
 
+![image](https://user-images.githubusercontent.com/13921610/174394142-582aa8fc-965e-47d1-b7ec-2ef840396280.png)
+![image](https://user-images.githubusercontent.com/13921610/174394168-2040e3c3-cb8c-4494-81c7-724bef03fe33.png)
+![image](https://user-images.githubusercontent.com/13921610/174394533-5d8020c6-735a-4794-95cd-fab3efc95c01.png)
+
+After adding the API key manually, everything works.
+
+![image](https://user-images.githubusercontent.com/13921610/174394820-5545741e-383f-439d-9a4e-c232408a4355.png)
+
+
+### Executing the command manually
+
+Executing the command manually results in a 104 exit code, even in a terminal where the environment variable is set.
+
+![image](https://user-images.githubusercontent.com/13921610/174394253-437f291c-b80c-44a4-9fbe-cb3d94f41375.png)
 
 
 ### Misc
@@ -64,16 +90,6 @@ gitpod /workspace/wakatime-gitpod-repro (main) $ cat ~/.wakatime.cfg
 [settings]
 debug = true
 ```
-
-## Reproduction
-
-1. Create a gitpod.io account
-2. Add the WAKATIME_API_KEY variable here: https://gitpod.io/variables (with value from https://wakatime.com/api-key)
-3. Open this repository using GitPod
-4. Edit a file to trigger WakaTime reporting
-5. You will see the error message
-6. Execute `> WakaTime: Api Key` and set your API key manually
-7. Edit a file. Everything will work.
 
 ## References
 
